@@ -35,7 +35,7 @@ class _CalendarState extends State<Calendar> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("ESTech Calendar"),
+        title: Text("Calendar for medicine"),
         centerTitle: true,
       ),
       body: Column(
@@ -73,11 +73,11 @@ class _CalendarState extends State<Calendar> {
               selectedDecoration: BoxDecoration(
                 color: Colors.blue,
                 shape: BoxShape.rectangle,
-                borderRadius: BorderRadius.circular(5.0),
+                borderRadius: BorderRadius.circular(19.0),
               ),
               selectedTextStyle: TextStyle(color: Colors.white),
               todayDecoration: BoxDecoration(
-                color: Colors.purpleAccent,
+                color: Colors.orange,
                 shape: BoxShape.rectangle,
                 borderRadius: BorderRadius.circular(5.0),
               ),
@@ -95,7 +95,7 @@ class _CalendarState extends State<Calendar> {
               titleCentered: true,
               formatButtonShowsNext: false,
               formatButtonDecoration: BoxDecoration(
-                color: Colors.blue,
+                color: Colors.green,
                 borderRadius: BorderRadius.circular(5.0),
               ),
               formatButtonTextStyle: TextStyle(
@@ -152,7 +152,7 @@ class _CalendarState extends State<Calendar> {
           ),
         ),
         label: Text("Add Event"),
-        icon: Icon(Icons.add),
+        icon: Icon(Icons.add_alert),
       ),
     );
   }
